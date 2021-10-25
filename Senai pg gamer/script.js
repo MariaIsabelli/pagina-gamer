@@ -1,3 +1,6 @@
+window.alert('Bem Vindo a Gamer Mania uma página de gamer para gamer.')
+console.log('Bem Vindo a Gamer Mania uma página de gamer para gamer')
+
 $(document).ready(function() {
     $('#contact_form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
@@ -119,4 +122,3 @@ $(document).ready(function() {
             }, 'json');
         });
 });
-
