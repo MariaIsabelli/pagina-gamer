@@ -8,49 +8,148 @@
     <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
-    <div id="formulario">
-        <form name="cadastro" method="post">
-          <div class="campo">
-            <label id="tel">Telefone fixo/móvel</label>
-            <input type="text" class="telefone" pattern=".{13,14}" maxlength="14" name="Telefone" placeholder="(xx)xxxxx-xxxx" required>
-            <label id="respostaTel" class="animated shake"></label>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous" ></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+  <script src="controller.js"> </script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  
+</head>
+
+<body  ng-controller="myCtrl">
+
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Cadastro</h3>
+    </div>
+
+
+    <div class="panel-body">
+
+      <fomr>
+
+        <div class="row">
+
+          <div class="col-md-12">
+            <h3>Dados Pessoais </h3>
           </div>
-          <div class="campo">
-            <label id="cpf">CPF</label>
-            <input type="text" class="cpf" maxlength="11" name="CPF" placeholder="xxx.xxx.xxx-xx" required>
-            <label id="respostaCPF" class="animated shake">O CPF digitado não existe</label>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" placeholder="Nome" ng-model="pessoa.nome"/>
           </div>
-          <div class="campo">
-            <label id="cnpj">CNPJ</label>
-            <input type="text" class="cnpj" maxlength="18" name="CNPJ" placeholder="xx.xxx.xxx/xxxx-xx" required>
-            <label id="respostaCNPJ" class="animated shake">O CNPJ digitado não existe</label>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" placeholder="Sobrenome" ng-model="pessoa.sobrenome"/>
           </div>
-          <div class="campo">
-            <label>Cep</label>
-            <input name="Cep" type="text" id="cep" maxlength="9" placeholder="xxxxx-xxx" required/>
-            <label id="respostaCep" class="animated shake"></label>
+
+          <div class="form-group col-md-4">
+            <select class="form-control" ng-model="pessoa.sexo">
+              <option value="" >Sexo</option>
+              <option value="0">Mascculino</option>
+              <option value="1">Feminino</option>
+            </select>
           </div>
-          <div class="campo">
-            <label>Rua</label>
-            <input name="rua" type="text" id="rua" required/>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" placeholder="E-mail" ng-model="pessoa.email"/>
           </div>
-          <div class="campo">
-            <label>Bairro</label>
-            <input name="bairro" type="text" id="bairro" required/>
+
+          <div class="form-group col-md-4" >
+            <input type="text" class="form-control" placeholder="Telefone" ng-model="pessoa.telefone"/>
           </div>
-          <div class="campo">
-            <label>Cidade</label>
-            <input name="cidade" type="text" id="cidade" required/>
+
+          <div class="col-md-12">
+            <h3>Endereço </h3>
           </div>
-          <div class="campo">  
-            <label>Estado</label>
-            <input name="uf" type="text" id="uf" required/>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" placeholder="Rua / AV" ng-model="pessoa.endereco.rua"/>
           </div>
-        
-      
-          <input type="submit" value="Cadastrar">
-        </form>
-        <script src="cadastro.js"></script>
+
+          <div class="form-group col-md-2">
+            <input type="text" class="form-control" placeholder="Numero" ng-model="pessoa.endereco.numero"/>
+          </div>
+
+          <div class="form-group col-md-3">
+            <input type="text" class="form-control" placeholder="Complemento" ng-model="pessoa.endereco.complemento"/>
+          </div>
+
+          <div class="form-group col-md-2">
+            <input type="text" class="form-control" placeholder="CEP" ng-model="pessoa.endereco.cep"/>
+          </div>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" placeholder="Bairro" ng-model="pessoa.endereco.bairro"/>
+          </div>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" placeholder="Cidade" ng-model="pessoa.endereco.cidade"/>
+          </div>
+
+          <div class="form-group col-md-3">
+            <input type="text" class="form-control" placeholder="UF" ng-model="pessoa.endereco.uf"/>
+          </div>
+    <div class="row">
+
+      <div class="form-group col-md-1">
+        <button type="button" class="btn btn-success form-control" ng-click=salvar()>Salvar</button>
       </div>
+      <div class="form-group col-md-1">
+        <button type="button" class="btn btn-warning form-control" ng-click=limpar()>Limpar</button>
+      </div>
+      <div class="form-group col-md-1">
+        <button type="button" class="btn btn-danger form-control" href="home.html">Cancelar</button>
+      </div>
+
+    </div>
+
+    <form>
+
+      <div class="row">
+
+        <div class="form-group col-md-12">
+          <input type="text" class="form-control" placeholder="Pesquisar" ng-model="pesquisa"/>
+        </div>
+
+        <div class="table-responsive col-md-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>E-Mail</th>
+                <th>Telefone</th>
+                <th>Forma de pagamento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="pessoa in cadastradas">
+                <td>{{pessoa.nome}}</td>
+                <td>{{pessoa.email}}</td>
+                <td>{{pessoa.telefone}}</td>
+             </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </form>
+
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="cadastro.js"></script>
+
 </body>
 </html>
