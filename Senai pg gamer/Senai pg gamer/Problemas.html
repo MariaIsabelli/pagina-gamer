@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="style.css">
+    <Header>
+        <nav id="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="smartphones.html">Smartphones</a></li>
+            <li><a href="Cadastro.html">Cadastro</a></li>
+            <li><a href="Problemas.html">Problemas? Fale Conosco</a></li>
+            <li><a href="Novidades.html">Novidades</a></li>
+            <li><a href="login.html">Login</a></li>
+    </Header>
+    <body>
+        <form>
+            <label for="name">Nome</label>
+            <input type="text" id="name">
+            <p>Digite Seu Nome Completo.</p>
+            <hr><br>
+            <label for="date-example">Data de nascimento</label>
+            <input type="date" id="date-example">
+            <p>Digite Sua Data De Nascimento.</p>
+            <hr><br>
+            <label for="email-example"> e-mail</label>
+            <input type="email" id="email-example">
+            <p>Coloque um E-mail valido para que possamos lhe responder.</p>
+            <hr><br>
+            <div style="float:left">
+                <input type="submit" id="btn-enviar" name="btn-enviar" required >
+            </div>
+            <div>
+            <!-- textarea: atribuído para a caixa de texto -->
+            <!-- rows: define a quantidade de linhas e altera a altura do textarea -->
+            <!-- cols: define a quantidade de colunas e altera a largura do textarea -->
+            <!-- minlength: define a quantidade mínima de caracteres de um input -->
+            <!-- placeholder: define uma mensagem dentro da área de texto -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="20" maxlength="200" minlength="2" placeholder="Digite aqui sua mensagem" required autocomplete>
+        
+        </form>
+        </body>
+        </html>

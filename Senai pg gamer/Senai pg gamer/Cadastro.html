@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro gamer mania</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous" ></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+  <script src="controller.js"> </script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  
+</head>
+
+<body  ng-controller="myCtrl">
+
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Cadastro</h3>
+    </div>
+
+
+    <div class="panel-body">
+
+      <fomr>
+
+        <div class="row">
+
+          <div class="col-md-12">
+            <h3>Dados Pessoais </h3>
+          </div>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" placeholder="Nome" ng-model="pessoa.nome"/>
+          </div>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" placeholder="Sobrenome" ng-model="pessoa.sobrenome"/>
+          </div>
+
+          <div class="form-group col-md-4">
+            <select class="form-control" ng-model="pessoa.sexo">
+              <option value="" >Sexo</option>
+              <option value="0">Mascculino</option>
+              <option value="1">Feminino</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" placeholder="E-mail" ng-model="pessoa.email"/>
+          </div>
+
+          <div class="form-group col-md-4" >
+            <input type="text" class="form-control" placeholder="Telefone" ng-model="pessoa.telefone"/>
+          </div>
+
+          <div class="col-md-12">
+            <h3>Endereço </h3>
+          </div>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" placeholder="Rua / AV" ng-model="pessoa.endereco.rua"/>
+          </div>
+
+          <div class="form-group col-md-2">
+            <input type="text" class="form-control" placeholder="Numero" ng-model="pessoa.endereco.numero"/>
+          </div>
+
+          <div class="form-group col-md-3">
+            <input type="text" class="form-control" placeholder="Complemento" ng-model="pessoa.endereco.complemento"/>
+          </div>
+
+          <div class="form-group col-md-2">
+            <input type="text" class="form-control" placeholder="CEP" ng-model="pessoa.endereco.cep"/>
+          </div>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" placeholder="Bairro" ng-model="pessoa.endereco.bairro"/>
+          </div>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" placeholder="Cidade" ng-model="pessoa.endereco.cidade"/>
+          </div>
+
+          <div class="form-group col-md-3">
+            <input type="text" class="form-control" placeholder="UF" ng-model="pessoa.endereco.uf"/>
+          </div>
+    <div class="row">
+
+      <div class="form-group col-md-1">
+        <button type="button" class="btn btn-success form-control" ng-click=salvar()>Salvar</button>
+      </div>
+      <div class="form-group col-md-1">
+        <button type="button" class="btn btn-warning form-control" ng-click=limpar()>Limpar</button>
+      </div>
+      <div class="form-group col-md-1">
+        <button type="button" class="btn btn-danger form-control" href="home.html">Cancelar</button>
+      </div>
+
+    </div>
+
+    <form>
+
+      <div class="row">
+
+        <div class="form-group col-md-12">
+          <input type="text" class="form-control" placeholder="Pesquisar" ng-model="pesquisa"/>
+        </div>
+
+        <div class="table-responsive col-md-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>E-Mail</th>
+                <th>Telefone</th>
+                <th>Forma de pagamento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="pessoa in cadastradas">
+                <td>{{pessoa.nome}}</td>
+                <td>{{pessoa.email}}</td>
+                <td>{{pessoa.telefone}}</td>
+             </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </form>
+
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="cadastro.js"></script>
+
+</body>
+</html>

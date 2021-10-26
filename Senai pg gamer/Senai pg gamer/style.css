@@ -1,0 +1,424 @@
+.soc-media a, .post i, .post h1 {
+  color: #1E90FF;
+  transition: color 0.25s;
+}
+.soc-media a:focus, .post i:focus, .post h1:focus, .soc-media a:hover, .post i:hover, .post h1:hover {
+  color: #0077ea;
+}
+.soc-media a:active, .post i:active, .post h1:active {
+  color: #389dff;
+}
+
+/*Typography*/
+html {
+  font: 16px "Ubuntu", sans-serif;
+}
+
+/*Layout*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+section {
+  padding: 1em 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.row,
+nav {
+  margin: auto;
+  width: 100%;
+  max-width: 60em;
+  /*960px*/
+}
+
+.col-2 {
+  display: inline-block;
+  width: 49%;
+  min-width: 300px;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 500px) {
+  .col-2 {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+}
+.col-4 {
+  display: inline-block;
+  width: 24.7%;
+  min-width: 230px;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 500px) {
+  .col-4 {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+}
+/*Navigation*/
+header {
+  float: left;
+  position: relative;
+  width: 100%;
+  background: #1E90FF;
+  box-shadow: 0px 1px 3px #333;
+  z-index: 1;
+}
+
+.fa-gamepad {
+  display: block;
+  float: left;
+  margin-left: 0.25em;
+  font-size: 3em;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .fa-gamepad {
+    clear: both;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+input {
+  display: none;
+}
+
+input:checked + .nav {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav li {
+    text-align: center;
+  }
+}
+.nav li:first-child a {
+  background: #0583ff;
+}
+
+.nav a,
+label {
+  text-align: center;
+  color: #fff;
+}
+.nav a:focus, .nav a:hover,
+label:focus,
+label:hover {
+  background: #0583ff;
+}
+.nav a:active,
+label:active {
+  background: #2895ff;
+}
+
+.nav a {
+  display: block;
+  padding: 1em 0.75em;
+}
+
+label.fa {
+  display: none;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  label.fa {
+    display: block;
+  }
+}
+/*Intro*/
+.sec-intro {
+  padding-top: 0;
+}
+
+.sec-intro .row {
+  max-width: 100%;
+}
+
+.sec-intro .row > img {
+  float: left;
+  width: 50%;
+  height: 480px;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 500px) {
+  .sec-intro .row > img {
+    width: 100%;
+  }
+}
+.sec-intro .col-4 {
+  margin-right: -3.5px;
+  width: 25%;
+}
+
+.sec-intro .col-4 img {
+  height: 200px;
+}
+
+@media screen and (max-width: 930px) {
+  .sec-intro .col-4 {
+    width: 50%;
+  }
+
+  .sec-intro .col-4:nth-child(3),
+.sec-intro .col-4:last-child {
+    margin-top: -3px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sec-intro .col-4 {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .sec-intro .col-4:nth-child(2),
+.sec-intro .col-4:nth-child(3),
+.sec-intro .col-4:last-child {
+    margin-top: -3px;
+  }
+}
+.sec-intro img {
+  width: 100%;
+}
+
+/*Posts*/
+.sec-posts {
+  margin-bottom: 1em;
+}
+
+.sec-posts .row:first-child {
+  border-top: 0.1em dashed #aaa;
+}
+
+@media screen and (max-width: 622px) {
+  .sec-posts .col-2 {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+}
+.sec-posts h2 {
+  padding: 0 0.25em;
+}
+
+@media screen and (max-width: 622px) {
+  h2 {
+    text-align: center;
+  }
+}
+.post {
+  padding: 0 0.5em;
+}
+
+.post img {
+  float: left;
+  margin-right: 0.5em;
+  width: 40%;
+  height: 143px;
+}
+
+.post h1 {
+  display: inline;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+.post p {
+  padding-right: 0.25em;
+  font-size: 90%;
+  text-align: justify;
+}
+
+.post span {
+  float: right;
+}
+
+.post i {
+  cursor: pointer;
+}
+
+.post i:first-child {
+  margin-right: 0.5em;
+}
+
+button {
+  margin-left: 0.5em;
+  padding: 0.5em 0;
+  width: 100px;
+  text-transform: uppercase;
+  background: #fff;
+  color: #1E90FF;
+  border: 0.1em solid;
+  outline: 0;
+  transition: color 0.25s;
+}
+button:focus, button:hover {
+  color: #0077ea;
+}
+button:active {
+  color: #389dff;
+}
+
+@media screen and (max-width: 500px) {
+  button {
+    display: block;
+    margin: auto;
+  }
+}
+/*Games*/
+.sec-games {
+  background: #222;
+  color: #fff;
+}
+
+.sec-games .row {
+  margin-bottom: 2em;
+}
+
+.sec-games h1 {
+  text-align: center;
+}
+
+.sec-games .col-4 {
+  padding: 0 0.5em;
+}
+
+@media screen and (max-width: 970px) {
+  .sec-games .col-4 {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sec-games .col-4 {
+    margin-bottom: 1.5em;
+  }
+}
+.sec-games img {
+  width: 100%;
+  height: 190px;
+}
+
+.sec-games h2 {
+  margin: 0.1em 0;
+  font-size: 105%;
+  text-align: center;
+  color: #C1171C;
+  transition: color 0.25s;
+}
+
+.sec-games a {
+  transition: color 0.25s;
+}
+
+.sec-games a:hover h2 {
+  color: #931215;
+}
+
+.sec-games a:active h2 {
+  color: #c6181d;
+}
+
+.sec-games p {
+  margin-top: 0.5em;
+  font-size: 80%;
+  text-align: center;
+}
+
+/*Footer*/
+.footer-outer {
+  padding: 1em 0;
+  background: #1E90FF;
+  color: #fff;
+}
+
+footer .row:first-child a {
+  color: #fff;
+}
+footer .row:first-child a:focus, footer .row:first-child a:hover {
+  color: #333;
+}
+footer .row:first-child a:active {
+  color: #eee;
+}
+
+footer .row:last-child {
+  padding: 0.5em;
+}
+
+@media screen and (max-width: 970px) {
+  footer .col-4 {
+    width: 49%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  ul {
+    text-align: center;
+  }
+}
+.copy {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.soc-media {
+  float: right;
+}
+
+.soc-media li {
+  float: left;
+}
+
+.soc-media li:not(:last-child) {
+  margin-right: 0.5em;
+}
+
+.soc-media a {
+  display: block;
+  font-size: 130%;
+}

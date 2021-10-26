@@ -1,0 +1,12 @@
+body{
+  background-color: aqua;
+}
+input,select{
+    /* Remover Bordas das caixas de texto*/
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    box-shadow: 0 0 0 0 !important;
+
+    border-radius: 0 !important;
+  }
