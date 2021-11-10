@@ -1,0 +1,103 @@
+#main-wrapper { width: 1100px; margin: 0 auto 0 auto; }
+
+.topban { background: #ececec; display:block; overflow: hidden; margin-bottom:10px; /*position: absolute;*/ top: 292px; }
+.topbanwrapper { padding:10px; width: 1038px; display:block; overflow: hidden; }
+.topban-left { float: left; }
+.topban-right { float: right; }  
+
+.produtos-banner { float:left; display:block; border: 1px solid #e6e6e6; border-radius:5px; 
+-webkit-box-shadow: 0px 0px 15px rgba(50, 50, 50, 0.1);
+-moz-box-shadow:    0px 0px 15px rgba(50, 50, 50, 0.1);
+box-shadow:         0px 0px 15px rgba(50, 50, 50, 0.1);
+  margin: 0 22px 0 22px;
+}
+
+.produtos-banner#ban1 .titulo-block {}
+.produtos-banner#ban2 .titulo-block { background-position: 4% 13%; }
+.produtos-banner#ban3 .titulo-block { background-position: 5% 30%; }
+.produtos-banner#ban4 .titulo-block { background-position: 4% 48%; }
+
+.banners-wrapper { float:left; }
+.banners-wrapper div:first-child { margin-left: 0; }
+.banners-wrapper div:last-child { margin-right: 0; }
+.titulo-block { background: url('https://i.imgur.com/QKpwFjh.png?1') no-repeat 5% -4%; border-top-left-radius: 5px; border-top-right-radius: 5px; text-align: center; color: #515151; padding: 14px 0 4px 0; font-family: 'Arial' , sans-serif; font-size: 14px; text-transform: uppercase; }
+.prod-wrapper {  }
+.slider-code { height: 348px; overflow:hidden; }
+.slider-code .viewport { float: left; width: 240px; height: 306px; overflow: hidden; position: relative; }
+.slider-code .buttons { display: block; margin: 100px 10px 0 0; float: left; background: url('https://i.imgur.com/QKpwFjh.png?1') no-repeat 0% 0%; position: absolute; z-index: 999; width: 30px; height: 28px; }
+.slider-code a { text-decoration:none !important; color:white; font-size:23px; }
+.slider-code .prev { border-top-right-radius:5px; border-bottom-right-radius:5px; background-position: 66% 88%; }
+.slider-code .prev:hover { background-position: 66% 66%; }
+.slider-code .next { border-top-left-radius:5px; border-bottom-left-radius:5px; margin-left: 207px; background-position: 100% 99%;  }
+.slider-code .next:hover { background-position: 147% 77%; }
+.slider-code .disable { visibility:hidden; }
+.slider-code .overview { list-style: none; padding: 0; margin: 0;  position: absolute; left: 0; top: 0; }
+.slider-code .overview li{ float: left; margin: 9px 0 0 11px; padding: 1px; border-bottom: 1px solid #dcdcdc; border-top: 1px solid #dcdcdc; width: 217px; }
+
+.slider-code .pager { overflow:hidden; list-style: none; clear: both; margin: 0 0 0 43px; padding-top: 13px; }
+.slider-code .pager li { float: left; margin: 2px; }
+.slider-code .pagenum { background-color: #d1d1d1; text-decoration: none; text-align: center; padding: 6px; display: block; border-radius:20px; }
+.slider-code .active { color: #fff; background-color: #42bbc6; padding:7px; }
+
+/* #barra newsletter */
+#social_bar{ width:100%; min-width:840px; max-width:1100px; height:80px; background:#fafafa;  border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5;}
+
+#socialicons{ font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:14; padding:10px; margin:5px 15px 15px 15px; width:250px; ; float:left;}
+.pd_social_icons{padding:2px 13px 0px 10px; margin-left:-6px; float:left;}
+.pd_social_icons :hover{ opacity:0.6;}
+
+#facebooklike{ padding:0px; margin:5px 15px 15px 25px;  width:220px; background:#fafafa;float:left; border-radius:5px; }
+
+#subscribe{padding:1px; float:right;}
+
+/* form */
+
+/* MailChimp Form Embed Code - Classic - 08/17/2011 */
+#mc_embed_signup form { display: block; position: relative; text-align: left; width: 285px; }
+#mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
+#mc_embed_signup input {border:1px solid #999; -webkit-appearance:none; float:left; }
+#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+#mc_embed_signup input:focus {border-color:#333;}
+#mc_embed_signup .button { clear: both; background-color: #ed4747; border: 0 none; border-radius: 4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size: 15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto; padding: 0px 17px !important; }
+#mc_embed_signup .button:hover {background-color:#777;}
+#mc_embed_signup .small-meta {font-size: 11px;}
+#mc_embed_signup .nowrap {white-space:nowrap;}
+
+#mc_embed_signup .mc-field-group { position: relative; padding: 3% 5%; min-height: 50px; }
+#mc_embed_signup .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
+* html #mc_embed_signup .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
+#mc_embed_signup .mc-field-group label {display:block; margin-bottom:3px;}
+#mc_embed_signup .mc-field-group input { display: block; text-indent: 2%; clear: none; padding: 7px; margin: 0 0 0px 3px; }
+#mc_embed_signup .mc-field-group select {display:inline-block; width:99%; padding:5px 0; margin-bottom:2px;}
+
+#mc_embed_signup .datefield, #mc_embed_signup .phonefield-us{padding:5px 0;}
+#mc_embed_signup .datefield input, #mc_embed_signup .phonefield-us input{display:inline; width:60px; margin:0 2px; letter-spacing:1px; text-align:center; padding:5px 0 2px 0;}
+#mc_embed_signup .phonefield-us .phonearea input, #mc_embed_signup .phonefield-us .phonedetail1 input{width:40px;}
+#mc_embed_signup .datefield .monthfield input, #mc_embed_signup .datefield .dayfield input{width:30px;}
+#mc_embed_signup .datefield label, #mc_embed_signup .phonefield-us label{display:none;}
+
+#mc_embed_signup .indicates-required {text-align:right; font-size:11px; margin-right:4%;}
+#mc_embed_signup .asterisk {color:#c60; font-size:200%;}
+#mc_embed_signup .mc-field-group .asterisk {position:absolute; top:25px; right:10px;}        
+#mc_embed_signup .clear {clear:both;}
+
+#mc_embed_signup .mc-field-group.input-group ul {margin:0; padding:5px 0; list-style:none;}
+#mc_embed_signup .mc-field-group.input-group ul li {display:block; padding:3px 0; margin:0;}
+#mc_embed_signup .mc-field-group.input-group label {display:inline;}
+#mc_embed_signup .mc-field-group.input-group input { display: block; text-indent: 2%; clear: none; padding: 5px 6px;}
+
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+
+#mc-embedded-subscribe {clear:both; width:auto; display:block; margin:1em 0 1em 5%;}
+#mc_embed_signup #num-subscribers {font-size:1.1em;}
+#mc_embed_signup #num-subscribers span {padding:.5em; border:1px solid #ccc; margin-right:.5em; font-weight:bold;}
+
+/* #static banners */
+#static-banners { margin-top: 415px; position: relative; display: block; }
+#static-banners .sbanwrapper { width: 33.33333%; float:left; }
+#static-banners .sbanwrapper img { display:block; margin:0 auto 0 auto; }

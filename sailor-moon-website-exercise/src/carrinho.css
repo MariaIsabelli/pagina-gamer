@@ -1,0 +1,127 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background: #E2FCF5;
+  }
+  ul.products {
+    list-style: none;
+    padding: 0 270px 0 0;
+  }
+  ul.products li {
+    width: 150px;
+    height: 200px;
+    float: left;
+    margin: 5px 10px;
+    padding: 20px;
+    color: #694F77;
+    text-align: center;
+    border: 2px solid #C6EBE5;
+    border-radius: 4px;
+    background: #fff;
+  }
+  ul.products li img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  ul.products li h3 {
+    font-size: 15px;
+    color: #518E8E;
+    margin: 5px 0 5px 0;
+  }
+  ul.products li span.price {
+    font-size: 16px;
+    color: #694F77;
+    text-align: center;
+  }
+  ul.products li a.btn-add {
+    display: block;
+    margin: 10px 40px 0;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    background: orange;
+  }
+  ul.products li a.btn-add:hover {
+    background: #D0782A;
+  }
+  div#shopping-cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 250px;
+    overflow: hidden;
+    padding: 5px 10px 10px;
+    border-radius: 4px;
+    background: #665B7A;
+  }
+  div#shopping-cart #info {
+    width: 215px;
+    padding: 5px 0 10px;
+    color: #64C1A9;
+    z-index: 9;
+  }
+  div#shopping-cart #info a.btn-limpar-car {
+    display: block;
+    width: 18px;
+    height: 18px;
+    float: right;
+    text-indent: -99px;
+    overflow: hidden;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACLElEQVR4Xu1bS1ICMRDtsKNKS9iDnxPIDdQbjDdgKa7gBOIJYCUuOcLcAL2BnkAU9kBpFTvbnhpBZiZTZCAUE+vNBqpIejovyevXTaJoB8+H1+gooqZN00zUPfZ7LZs2A1vip91n7DWa4mzHrtXQmjjbqvi9rk3b1gEYeTdtcfXOppN/tvi+6j+KfXsPALCHZWgpZQU8b/iei2g/R1dA1e9ttNJGXkPoZPUBAG5ygLMrYOzd1ljxUZb9y8x1Raoe6aPoMouNZVump8gGIO4rpfpZbClWs4r/8JLWR7s3g4F/Ew/kx1KWl+W1LRMPC1S41gGRAGDi1UufVHz7L4NfTIqw6fSQ5mdlvz9dnagEABLGZLmqQV5nczu/+EqEVGRbAQAdorIKhDTU+XZo5603v8rs1+JeaUnwlwck6WBPGD1TFMjdsIlnMpm+7P9mfP8HvhorNLe4IbnXM4XBlG3hEDkCgATbYwWkIAAOMGVtkKBTChEkCBKMa35EAUQBPQIIgwiDhghAB0AHuFQqgxCCEIIQilV/oQShBKEEtQhAChsKweDkB6rC7vxnCCEEIQQhBCEUPQcAJQglCCUIJahDAFIYUtgQAeQCSIaQDSIdRjrszBli1ANQD0A9APUAy/WA4AT5FxUnhsJxr80OaF7WnQzfKhkKOss9vqF8nOx1dOtf/i631E7XNwtbGGeDIQAuqEHzEJgZgBUQ2vI9dq3VFPOdtZPrudw2Zf+FFz8g+KZQ4mNa/AAAAABJRU5ErkJggg==');
+    background-size: cover;
+  }
+  div#shopping-cart div.lista {
+    width: 250px;
+    max-height: 180px;
+    overflow: auto;
+  }
+  div#shopping-cart div.lista ul {
+    list-style: none;
+    width: 215px;
+    padding: 0;
+    margin: 0;
+  }
+  div#shopping-cart div.lista ul li {
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    margin: 0 0 2px 0;
+    color: #665B7A;
+    background: #C2BDCA;
+  }
+  div#shopping-cart div.lista ul li.empty {
+    text-align: center;
+    line-height: 50px;
+  }
+  div#shopping-cart div.lista ul li img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+  div#shopping-cart div.lista ul li span.name {
+    display: block;
+    margin-top: 5px;
+    color: #518E8E;
+  }
+  div#shopping-cart div.lista ul li span.price {
+    display: block;
+    margin-top: 5px;
+  }
+  div#shopping-cart div.lista ul li .btn-close {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABaUlEQVQ4T61TUU7CQBB9j0YT45pwA+EEYiL9tZYDyA2EEwgnEE9gOYEegQvQ9Ls1sZxAvAGJNSYSOmbbLjRVTBT3qzuz8/pm5j2ict6dVmNV27sG4QBs5WmJIQisdDk+COJ5uYTlS+K2PZDXELwAMhFwofOE1AF2QRxDxFN+NDR1a4DEtWOhNCgyUv6jV2Wm74l7NgBrd5qRmkanOXiWaHtC9LiCo4Io/q7YxBKn3YLFJ4iMlR8NmPVs7T9D0uG2P1cBDRNr9dFk1jfYVX7YMA/fOnZXROrKjx4Khj2Si8NpOFkzce25nhN174AEms4m2e6BvIdIP4sV3wbQtA3inEnHFhHcHvnhqLKRHCTbovTLxTr06tojEjf/ALBLC6Bjhnip/LD5pyHuvMa1kIArprj4tZBKe41BnAAyUNNo/KOUBTPlh5nRtpkpF0lhJtmYqWEk/MVMJlDYeQDQyRlpHWCmxWalS69q508KlvFkf0EtlQAAAABJRU5ErkJggg==');
+    background-size: cover;
+  }
+  div#shopping-cart div.lista ul li .btn-close img {
+    width: 10px;
+    height: 10px;
+  }

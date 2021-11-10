@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Cadastro</title>
+  <link rel="stylesheet" href="cadastro.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form id="form">
+  <ul id="progresso">
+    <li class="ativo">Dados da Conta</li>
+    <!--li Informações Pessoais-->
+    <li>Questões Obrigatórias</li>
+    <li>Validação dos Dados</li>
+  </ul>
+  <fieldset>
+    <h2>Cadastro de Usuário</h2>
+    <h4>Dados da Conta</h4>
+    <input id="nome" type="text" name="nome" placeholder="Nome" required="required"/>
+    <input id="sobrenome" type="text" name="sobrenome" placeholder="Sobrenome" required="required"/>
+    <input id="email" type="email" name="email" placeholder="E-mail" required="required"/>
+    <input id="c_email" type="email" name="c_email" placeholder="Confirme seu e-mail" required="required"/>
+    <input id="senha" type="password" name="senha" placeholder="Senha" required="required"/>
+    <input id="c_senha" type="password" name="c_senha" placeholder="Confirme sua senha" required="required"/>
+    <input class="proximo" type="button" name="proximo" value="Próximo"/>
+  </fieldset>
+  <fieldset>
+    <h2>Informações adicionais</h2>
+    <h4>Dados da Conta</h4>
+    <input id="ano" type="text" name="ano" placeholder="Ano de nascimento" required="required"/>
+    <input id="cpf" type="text" name="cpf" placeholder="CPF" required="required"/>
+    <input id="estado" type="text" name="estado" placeholder="Estado" required="required"/>
+    <input id="cidade" type="text" name="cidade" placeholder="Cidade" required="required"/>
+    <input id="telefone" type="text" name="telefone" placeholder="Telefone"/>
+    <input id="celular" type="text" name="celular" placeholder="Celular"/>
+    <label for="conf">Você afirma que as informações prestadas são verídicas?
+      <input id="conf" type="checkbox" name="conf" required="required"/>
+    </label>
+    <label for="tdu">Você concorda com os nossos <a href="termos_de_uso.php">termos de uso</a>
+      <input id="tdu" type="checkbox" name="tdu" required="required"/>
+    </label>
+    <input class="anterior" type="button" name="proximo" value="Anterior"/>
+    <input class="proximo" type="button" name="proximo" value="Próximo"/>
+  </fieldset>
+ 
+  <fieldset>
+    <h2>Confirme suas informações</h2>
+    <h4>Validação dos dados</h4>
+    <label for="decisao">Você deseja rever suas informações?
+      <input id="s_decisao" type="button" name="decisao" value="Sim"/>
+    </label>
+    <p>Reveja os nossos <a href="termos_de_uso.php">Termos de Uso</a></p>
+    <input class="anterior" type="button" name="proximo" value="Anterior"/>
+    <input class="enviar" type="button" name="enviar" value="Enviar"/>
+  </fieldset>
+</form>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script><script  src="./script.js"></script>
+<script src="cadastro.js"></script>
+
+</body>
+</html>

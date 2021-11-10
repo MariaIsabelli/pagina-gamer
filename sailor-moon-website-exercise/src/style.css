@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/*navigation starts*/
+
+body {
+  background-color: rgb(214, 186, 219);
+}
+img {
+  margin: 50px;
+}
+
+.txthover {
+  display: none;
+}
+
+.nav-bar {
+  list-style-type: none;
+  margin: none;
+  padding: none;
+  overflow: hidden;
+  width: 100%;
+  height: 75px;
+  background-color: #f64747;
+}
+
+.innerbar {
+  float: right;
+  display: block;
+  margin: 25px 14px;
+}
+
+.innerbar li {
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.column img:hover {
+  background-color: #f64747;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+  transition: ease-in 0.5s;
+}
+a:link {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+a:hover {
+  color: #E9D460;
+  padding: 5px;
+}
+
+#logo {
+  margin: -2px 0px 0px 12px;
+  float: left;
+  display: block;
+}
+
+#menu {
+  visibility: hidden;
+}
+
+
+/* Underline From Left */
+
+.hoverleft {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+
+.hoverleft:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #E9D460;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hoverleft:hover:before,
+.hoverleft:focus:before,
+.hoverleft:active:before {
+  right: 0;
+}
+
+
+/*Navigation Bar Ends*/
+
+h1 {
+  font-family: 'Quicksand';
+  font-weight: 800;
+  color: #f64747;
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: -2px;
+}
+
+p {
+  font-family: 'Quicksand';
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/*Photos Start*/
+
+
+@media screen and (max-width:320px) {
+  .innerbar {
+    padding: 0px;
+  }
+  .innerbar li {
+    font-size: 18px;
+    visibility: hidden;
+  }
+  #logo {
+    position: abosolute;
+    padding: 30px 100px 10px;
+  }
+  .nav-bar {
+    width: 100%;
+    height: 200px;
+  }
+  #menu {
+    visibility: visible;
+    display: block;
+    position: absolute;
+    margin: 100px 110px 0px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  p {
+    text-align: center;
+    font-size: 12px;
+}
+
+  .column {
+   max-width: 100%;
+  }
+.hover a {
+  position: absolute;
+  left: 5px;
+  top: 17px;
+  right: 5px;
+  bottom: 0px;
+  background: rgba(246, 71, 71, 0.7);
+  opacity: 0;
+  transition: all 500ms ease;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Noto Sans';
+  color: #fff;
+}
+
+.hover:before {
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.box:hover .hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-bar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+ 
+  .nav-bar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .nav-bar {
+    width: 100%;
+  }
+
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter h2 a{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .instagram:hover {
+    color: purple;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .btn {
+    color: white;
+    background-color: #d84b6b;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+
+/* CSS utilizado para posicionar o rodapé no final da página. */
+/* Você pode remover isso. */
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+ 
+*{margin:0;padding:0;outline:none}
+#conteudo{
+  width: 100%;
+  height: 100vh;
+  background-color: #e74c3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  width: 25%;
+  height: 300px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: #ecf0f1;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.card:hover{
+  background-size: 110% 110%;
+  transition: all 1s ease;
+}
+.card-1{
+  background-image: url(http://migre.me/vditk); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.card-2{
+  background-image: url(http://migre.me/vdixa); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.card-3{
+  background-image: url(http://migre.me/vdiAw); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+img{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#layer{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  transition: all 1s ease;
+  text-align: center;
+}
+#layer:hover{
+  transition: all 1s ease;
+  opacity: 0.80;
+  background: black;
+  cursor: default;
+}
+/* BOTOES */
+#add{
+  width: 70%;
+  font-size: 15px;
+  height: 50px;
+  margin-top: 90px;
+  font-family: 'Helvetica';
+  font-weight: bold;
+  color: #fff;
+  background: #06304c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: none;
+  transition: all 0.5s ease;
+}
+#comprar{
+  margin-top: 10px;
+  font-size: 15px;
+  background: #06304c;
+  border: none;
+  border-radius: 5px;
+  width: 70%;
+  height: 50px;
+  font-family: 'Helvetica';
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  opacity: none;
+  transition: all 0.5s ease;
+}
+
+#add:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 2px 2px rgba(6, 48, 76, 0.80);
+  transition: all 0.5s ease;
+}
+#comprar:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 2px 2px rgba(6, 48, 76, 0.80);
+  transition: all 0.5s ease;
+}
+
+#myFooter {
+  background-color: (246, 71, 71, 0.7);
+  color: white;
+  padding-top: 30px;
+}
+
+#myFooter .footer-copyright {
+  background-color: (246, 71, 71, 0.7);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+#myFooter .row {
+  margin-bottom: 60px;
+}
+
+#myFooter .navbar-brand {
+  margin-top: 45px;
+  height: 65px;
+}
+
+#myFooter .footer-copyright p {
+  margin: 10px;
+  color: #ccc;
+}
