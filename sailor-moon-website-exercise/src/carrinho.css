@@ -1,6 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
-    background: #E2FCF5;
+    background-image: linear-gradient(to right top, #0011ff, #938edd, #8a7dc7, #545eb6, #5f478b, #ef8abd, #ee85be, #ed81c0, #e772c2, #de64c5, #d456ca, #c64ad0);
   }
   ul.products {
     list-style: none;

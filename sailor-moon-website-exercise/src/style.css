@@ -3,7 +3,7 @@
 /*navigation starts*/
 
 body {
-  background-color: rgb(214, 186, 219);
+  background-image: linear-gradient(to right top, #0011ff, #938edd, #8a7dc7, #545eb6, #5f478b, #ef8abd, #ee85be, #ed81c0, #e772c2, #de64c5, #d456ca, #c64ad0);
 }
 img {
   margin: 50px;
