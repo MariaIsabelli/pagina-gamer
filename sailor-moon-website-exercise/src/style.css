@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /*navigation starts*/
 
 body {
@@ -106,7 +106,7 @@ a:hover {
 /*Navigation Bar Ends*/
 
 h1 {
-  font-family: 'Quicksand';
+  font-family: Lobster, cursive;
   font-weight: 800;
   color: #f64747;
   text-align: center;
@@ -248,7 +248,7 @@ p {
 
 #myFooter .social-networks a {
     font-size: 32px;
-    color: #f9f9f9;
+    color: #000000;
     padding: 10px;
     transition: 0.2s;
 }
@@ -289,7 +289,6 @@ p {
 
 
 /* CSS utilizado para posicionar o rodapé no final da página. */
-/* Você pode remover isso. */
 
 html{
     height: 100%;
